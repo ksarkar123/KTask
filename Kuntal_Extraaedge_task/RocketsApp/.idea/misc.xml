@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Projects/Backup for Wfh/KSTask/Kuntal_Extraaedge_task/RocketsApp/app/src/main/res/drawable/rocket_row_background.xml" value="0.1945" />
+        <entry key="..\:/Android Projects/Backup for Wfh/KSTask/Kuntal_Extraaedge_task/RocketsApp/app/src/main/res/layout/activity_main.xml" value="0.21145833333333333" />
+        <entry key="..\:/Android Projects/Backup for Wfh/KSTask/Kuntal_Extraaedge_task/RocketsApp/app/src/main/res/layout/activity_splash.xml" value="0.21145833333333333" />
+        <entry key="..\:/Android Projects/Backup for Wfh/KSTask/Kuntal_Extraaedge_task/RocketsApp/app/src/main/res/layout/content_main.xml" value="0.11005434782608696" />
+        <entry key="..\:/Android Projects/Backup for Wfh/KSTask/Kuntal_Extraaedge_task/RocketsApp/app/src/main/res/layout/fragment_rocket_list.xml" value="0.21145833333333333" />
+        <entry key="..\:/Android Projects/Backup for Wfh/KSTask/Kuntal_Extraaedge_task/RocketsApp/app/src/main/res/layout/fragment_rockt_dtls.xml" value="0.33" />
+        <entry key="..\:/Android Projects/Backup for Wfh/KSTask/Kuntal_Extraaedge_task/RocketsApp/app/src/main/res/layout/rocket_row.xml" value="0.21" />
+        <entry key="..\:/Android Projects/Backup for Wfh/KSTask/Kuntal_Extraaedge_task/RocketsApp/app/src/main/res/xml/network_security_config.xml" value="0.11005434782608696" />
+        <entry key="..\:/Users/user/.gradle/caches/transforms-3/8dc71670b1568d47a2e59dd40a1da2c8/transformed/ImageSlideshow-0.1.0/res/drawable/default_unselected_dot.xml" value="0.1945" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

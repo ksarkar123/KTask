@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="rcktdata"
+            type="com.extraaedge.rocketapp.viewmodels.RocketViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_bg_color"
+        android:padding="10dp"
+        android:orientation="vertical"
+        tools:context=".fragments.ViewExpertProfile">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/flickr_imageSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_marginBottom="10dp"
+                        app:iss_auto_cycle="true"
+                        app:iss_corner_radius="15"
+                        app:iss_delay="0"
+                        app:iss_error_image="@android:color/darker_gray"
+                        app:iss_period="3000"
+                        app:iss_placeholder="@android:color/darker_gray"
+                        app:iss_selected_dot="@drawable/default_selected_dot"
+                        app:iss_text_align="CENTER"
+                        app:iss_title_background="@null"
+                        app:iss_unselected_dot="@drawable/default_unselected_dot"
+                        tools:ignore="MissingConstraints" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:gravity="center_vertical|start"
+                            android:text="@{rcktdata.Companion.rocketDetailsData.name}"
+                            android:fontFamily="@font/sofiapro_light"
+                            android:textSize="20sp"
+                            android:textColor="@color/h_text_color"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|start"
+                                android:text="@string/dimensions"
+                                android:fontFamily="@font/sofiapro_light"
+                                android:textSize="20sp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/colorPrimary"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:gravity="center_vertical|start"
+                                android:text="@string/height"
+                                android:fontFamily="@font/sofiapro_light"
+                                android:textSize="15sp"
+                                android:textColor="@color/h_text_color"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:gravity="center_vertical|start"
+                                android:text="@{rcktdata.Companion.rocketDetailsData.height}"
+                                android:fontFamily="@font/sofiapro_light"
+                                android:textSize="15sp"
+                                android:textColor="@color/h_text_color"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:gravity="center_vertical|start"
+                                android:text="@string/diameter"
+                                android:fontFamily="@font/sofiapro_light"
+                                android:textSize="15sp"
+                                android:textColor="@color/h_text_color"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:gravity="center_vertical|start"
+                                android:text="@{rcktdata.Companion.rocketDetailsData.diameter}"
+                                android:fontFamily="@font/sofiapro_light"
+                                android:textSize="15sp"
+                                android:textColor="@color/h_text_color"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:gravity="center_vertical|start"
+                                android:text="@string/action_status"
+                                android:fontFamily="@font/sofiapro_light"
+                                android:textSize="20sp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/colorPrimary"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="5dp"
+                            android:gravity="center_vertical|start"
+                            android:text="@{rcktdata.Companion.rocketDetailsData.action_status}"
+                            android:fontFamily="@font/sofiapro_light"
+                            android:textSize="15sp"
+                            android:textColor="@color/h_text_color"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:gravity="center_vertical|start"
+                                android:text="@string/cost_per_launch"
+                                android:fontFamily="@font/sofiapro_light"
+                                android:textSize="20sp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/colorPrimary"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="5dp"
+                            android:gravity="center_vertical|start"
+                            android:text="@{rcktdata.Companion.rocketDetailsData.cost_per_launch}"
+                            android:fontFamily="@font/sofiapro_light"
+                            android:textSize="15sp"
+                            android:textColor="@color/h_text_color"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:gravity="center_vertical|start"
+                                android:text="@string/success_rate"
+                                android:fontFamily="@font/sofiapro_light"
+                                android:textSize="20sp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/colorPrimary"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="5dp"
+                            android:gravity="center_vertical|start"
+                            android:text="@{rcktdata.Companion.rocketDetailsData.success_rate_pct}"
+                            android:fontFamily="@font/sofiapro_light"
+                            android:textSize="15sp"
+                            android:textColor="@color/h_text_color"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:gravity="center_vertical|start"
+                                android:text="@string/description"
+                                android:fontFamily="@font/sofiapro_light"
+                                android:textSize="20sp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/colorPrimary"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="5dp"
+                            android:gravity="center_vertical|start"
+                            android:text="@{rcktdata.Companion.rocketDetailsData.description}"
+                            android:fontFamily="@font/sofiapro_light"
+                            android:textSize="15sp"
+                            android:textColor="@color/h_text_color"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="50dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:gravity="center_vertical|start"
+                                android:text="@string/for_more_information_please_vivit"
+                                android:fontFamily="@font/sofiapro_light"
+                                android:textSize="20sp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/colorPrimary"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_wiki_link"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="5dp"
+                            android:gravity="center_vertical|start"
+                            android:text="@{rcktdata.Companion.rocketDetailsData.wikipedia}"
+                            android:fontFamily="@font/sofiapro_light"
+                            android:textSize="15sp"
+                            android:textColor="@color/link_color"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>
